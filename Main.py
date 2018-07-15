@@ -55,6 +55,8 @@ def main():
             return                                          # and exit program
         # end if
 
+        cv2.imwrite("licensePlate.png", licPlate.imgPlate);
+
         drawRedRectangleAroundPlate(imgOriginalScene, licPlate)             # draw red rectangle around plate
 
         print("\nlicense plate read from image = " + licPlate.strChars + "\n")  # write license plate text to std out
